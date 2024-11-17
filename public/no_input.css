@@ -165,7 +165,7 @@ h3 {
 .slider2 {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 58%; /* Full-width */
+  width: 40%; /* Full-width */
   height: 10px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
