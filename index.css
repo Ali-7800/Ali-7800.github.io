@@ -27,6 +27,8 @@
 }
 
 .pic {
+  height:10%;
+  width:10%;
   position: absolute;
   top:25px; left: 150px;
 }
