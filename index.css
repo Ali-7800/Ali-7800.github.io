@@ -65,6 +65,7 @@ h2 {
   background-color: transparent;
   color: rgb(255, 255, 255);
   /* text-align: center; */
+  width:80%;
   font-size: 2vw;
   margin: 10px;
   font-weight: 50;
