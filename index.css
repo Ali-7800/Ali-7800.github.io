@@ -26,3 +26,11 @@
   color: white;
 }
 
+h1 {
+  background-color: transparent;
+  color: black;
+  font-size: 4em;
+  margin: 1px;
+  font-weight: 100;
+}
+
