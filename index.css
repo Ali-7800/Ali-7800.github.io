@@ -2,6 +2,26 @@
   background-color: rgb(153, 153, 153);
 }
 
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #aa0404;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #aa0404;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(255, 77, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
