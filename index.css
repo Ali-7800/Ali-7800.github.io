@@ -9,7 +9,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 0px; */
   text-decoration: none;
   font-size: 17px;
 }
@@ -24,4 +24,9 @@
 .topnav a.active {
   background-color: #aa0404;
   color: white;
+}
+
+.pic {
+  position: absolute;
+  top:25px; left: 150px;
 }
