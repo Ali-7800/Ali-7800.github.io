@@ -1,0 +1,11 @@
+Model Information:
+* title:	Realistic Human Stomach
+* source:	https://sketchfab.com/3d-models/realistic-human-stomach-e0f1952de7204654ba469c3e887a029b
+* author:	neshallads (https://sketchfab.com/neshallads)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Realistic Human Stomach" (https://sketchfab.com/3d-models/realistic-human-stomach-e0f1952de7204654ba469c3e887a029b) by neshallads (https://sketchfab.com/neshallads) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

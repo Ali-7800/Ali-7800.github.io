@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gravel, mud and some dirt..
+* source:	https://sketchfab.com/3d-models/gravel-mud-and-some-dirt-8316d995c5ff40d4a317145f7668bef3
+* author:	Jukka Alander (https://sketchfab.com/kino)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gravel, mud and some dirt.." (https://sketchfab.com/3d-models/gravel-mud-and-some-dirt-8316d995c5ff40d4a317145f7668bef3) by Jukka Alander (https://sketchfab.com/kino) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

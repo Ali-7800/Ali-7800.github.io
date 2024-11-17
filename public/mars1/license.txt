@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mars landscape
+* source:	https://sketchfab.com/3d-models/mars-landscape-83f6f32b0a694f939cd16bf04f5565ef
+* author:	David Vacas Madrid (https://sketchfab.com/vacasmadrid)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mars landscape" (https://sketchfab.com/3d-models/mars-landscape-83f6f32b0a694f939cd16bf04f5565ef) by David Vacas Madrid (https://sketchfab.com/vacasmadrid) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
