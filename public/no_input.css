@@ -231,17 +231,17 @@ h3 {
   background: #6c0404;
 }
 .icon {
-  height: 3vw;
+  height: 10vw;
   transition: transform 500ms;
-  width: 3vw;
+  width: 10vw;
   position: absolute;
   top:0vw; left: 4.5vw;
 }
 .part {
   background: white;
-  height: 3vw;
+  height: 10vw;
   position: absolute;
-  width: 3vw;
+  width: 10vw;
 }
 .left {
 clip-path: polygon(
