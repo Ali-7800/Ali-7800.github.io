@@ -222,7 +222,7 @@ h3 {
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
   position: absolute;
-  top:10vw; left: 20vw;
+  top:10vw; left: 10vw;
   height: 10vw;
   width: 12vw;
   
@@ -235,7 +235,7 @@ h3 {
   transition: transform 500ms;
   width: 100px;
   position: absolute;
-  top:0px; left: 135px;
+  top:0vw; left: 5vw;
 }
 .part {
   background: white;
