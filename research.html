@@ -5,15 +5,14 @@
     <link rel="stylesheet" href="index.css">
     </head>
 
-<body style="background-color: #595959">
+<body style="background-color: #dfdfdf">
 <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="research.html">Research</a>
+  <a href="index.html">Home</a>
+  <a class="active" href="research.html">Research</a>
   <a href="#Personal Projects">Personal Projects</a>
   <a href="#Contact">Contact</a>
   <a href="bio.html">Bio</a>
 </div>
-
 
 
 <div class="research_content">
@@ -29,35 +28,35 @@
     control soft robots in complex environments. Below are some highlights of
     my work.
   </h2>
-<h1>
-  <!-- <br> -->
-  <b>Modelling Coiled Artifical Muscles</b>
-  <hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
-</h1>
-<h2>
-  Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
-  when heated/chemically actuated. These types of have several advantages that make interesting for
-  robotic applications. These advantages include the following:
-  <ul>
-    <li> Being easy and inexpensive to manufacture </li>
-    <li> Operate without hysteresis </li>
-    <li> Provide more than 30% reversible contraction </li>
-    <li> Provide millions of cycles of stroke without significant degradation </li>
-  </ul>
-  Below is an example of these muscles in action. I developed a model for the actuation of these muscles
-  and used our simulator <a href="https://github.com/GazzolaLab/PyElastica">PyElastica</a> to simulate 
-  the actuation of single fiber muscle. We work closely with the <a href="https://tawfick.mechse.illinois.edu/">kinetic Materials Research Group</a>
-  who manufacture these muscles and provides us with experimental data to validate our models.
-</h2>
-</text>
-<iframe
-  id="MuscleFrame"
-  title="Monocoil Active"
-  width="75%"
-  height="75%"
-  style="margin: auto;border: 3px solid black;"
-  src="monocoil_active.html">
-</iframe>
+
+<button type="button" class="collapsible">Modeling Coiled Artifical Muscles</button>
+<div class="content">
+  <h2>
+    Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
+    when heated/chemically actuated. These types of have several advantages that make interesting for
+    robotic applications. These advantages include the following:
+    <ul>
+      <li> Being easy and inexpensive to manufacture </li>
+      <li> Operate without hysteresis </li>
+      <li> Provide more than 30% reversible contraction </li>
+      <li> Provide millions of cycles of stroke without significant degradation </li>
+    </ul>
+    Below is an example of these muscles in action. I developed a model for the actuation of these muscles
+    and used our simulator <a href="https://github.com/GazzolaLab/PyElastica">PyElastica</a> to simulate 
+    the actuation of single fiber muscle. We work closely with the <a href="https://tawfick.mechse.illinois.edu/">kinetic Materials Research Group</a>
+    who manufacture these muscles and provides us with experimental data to validate our models.
+  </h2>
+  </text>
+  <iframe
+    id="MuscleFrame"
+    title="Monocoil Active"
+    width="75%"
+    height="75%"
+    style="margin: auto;border: 3px solid black;"
+    src="monocoil_active.html">
+  </iframe>
+  </div>
+
 <text style="display: inline-block;width: 100vw;">
 <h1>
   <!-- <br> -->
@@ -125,7 +124,22 @@
     src="monocoil_active.html">
   </iframe>
 
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
-
 
 </html>
