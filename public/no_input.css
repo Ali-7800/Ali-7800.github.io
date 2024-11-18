@@ -119,10 +119,10 @@ h3 {
 
 .slidecontainer {
   background-color: transparent;
-  width: 100%; /* Width of the outside container */
+  width: 50%; /* Width of the outside container */
   display: none;
   position: absolute;
-  top: 3vw; left: 10vw;
+  top: 3vw; left: 20vw;
 }
 
 /* The slider itself */
@@ -231,17 +231,17 @@ h3 {
   background: #6c0404;
 }
 .icon {
-  height: 100px;
+  height: 3vw;
   transition: transform 500ms;
-  width: 100px;
+  width: 3vw;
   position: absolute;
   top:0vw; left: 4.5vw;
 }
 .part {
   background: white;
-  height: 100px;
+  height: 3vw;
   position: absolute;
-  width: 100px;
+  width: 3vw;
 }
 .left {
 clip-path: polygon(
