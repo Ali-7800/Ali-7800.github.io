@@ -61,7 +61,7 @@ h1 {
   background-color: transparent;
   color: rgb(0, 0, 0);
   /* text-align: center; */
-  font-size: clamp(1.8rem, 4vw, 2.8rem);;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   margin: 10px;
   font-weight: 50;
 }
@@ -70,7 +70,7 @@ h2 {
   color: rgb(121, 121, 121);
   /* text-align: center; */
   width:80%;
-  font-size: clamp(1.8rem, 2vw, 2.8rem);;
+  font-size: clamp(1.8rem, 2vw, 2.8rem);
   margin: 10px;
   font-weight: 50;
 }
@@ -81,7 +81,7 @@ h2 {
 
 
 .collapsible {
-  background-color: #777;
+  background-color: #333;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -89,7 +89,7 @@ h2 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: clamp(1.8rem, 2vw, 2.8rem);
 }
 
 .active, .collapsible:hover {
