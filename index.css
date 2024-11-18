@@ -1,7 +1,7 @@
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  background-color: #ececec
+  background-color: #dcdcdc
 }
 
 a:link {
@@ -85,7 +85,7 @@ h2 {
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 80%;
+  width: 85%;
   border: none;
   text-align: left;
   outline: none;
