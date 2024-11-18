@@ -119,7 +119,7 @@ h3 {
 
 .slidecontainer {
   background-color: transparent;
-  width: 70%; /* Width of the outside container */
+  width: 60%; /* Width of the outside container */
   display: none;
   position: absolute;
   top: 3vw; left: 20vw;
@@ -165,7 +165,7 @@ h3 {
 .slider2 {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 60%; /* Full-width */
+  width: 59%; /* Full-width */
   height: 10px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
