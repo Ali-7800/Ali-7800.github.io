@@ -119,10 +119,10 @@ h3 {
 
 .slidecontainer {
   background-color: transparent;
-  width: 100%; /* Width of the outside container */
+  width: 60%; /* Width of the outside container */
   display: none;
   position: absolute;
-  top: 5vw; left: 20vw;
+  top: 3vw; left: 15vw;
 }
 
 /* The slider itself */
@@ -223,8 +223,8 @@ h3 {
   cursor: pointer;
   position: absolute;
   top:3vw; left: 7vw;
-  height: 5vw;
-  width: 6vw;
+  height: 6vw;
+  width: 7vw;
   
 }
 .button:active .background {
