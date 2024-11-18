@@ -223,8 +223,8 @@ h3 {
   cursor: pointer;
   position: absolute;
   top:10vw; left: 10vw;
-  height: 10vw;
-  width: 12vw;
+  height: 5vw;
+  width: 6vw;
   
 }
 .button:active .background {
