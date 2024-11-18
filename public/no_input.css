@@ -119,10 +119,10 @@ h3 {
 
 .slidecontainer {
   background-color: transparent;
-  width: 60%; /* Width of the outside container */
+  width: 30%; /* Width of the outside container */
   display: none;
   position: absolute;
-  top: 10vw; left: 30vw;
+  top: 5vw; left: 20vw;
 }
 
 /* The slider itself */
@@ -222,7 +222,7 @@ h3 {
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
   position: absolute;
-  top:10vw; left: 10vw;
+  top:5vw; left: 9vw;
   height: 5vw;
   width: 6vw;
   
