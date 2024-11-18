@@ -104,7 +104,7 @@ h2 {
   margin-left: 5px;
 }
 
-.active:after {
+.active.collapsible:after {
   content: "\2212";
 }
 

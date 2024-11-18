@@ -28,8 +28,10 @@
     control soft robots in complex environments. Below are some highlights of
     my work.
   </h2>
+  </text>
 
-<button type="button" class="collapsible">Modeling Coiled Artifical Muscles</button>
+
+<button type="button" class="collapsible"><h1>Modeling Coiled Artifical Muscles</h1></button>
 <div class="content">
   <h2>
     Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
@@ -46,7 +48,6 @@
     the actuation of single fiber muscle. We work closely with the <a href="https://tawfick.mechse.illinois.edu/">kinetic Materials Research Group</a>
     who manufacture these muscles and provides us with experimental data to validate our models.
   </h2>
-  </text>
   <iframe
     id="MuscleFrame"
     title="Monocoil Active"
@@ -57,47 +58,41 @@
   </iframe>
   </div>
 
-<text style="display: inline-block;width: 100vw;">
-<h1>
-  <!-- <br> -->
-  <b>Muscle Based Mechanisms</b>
-  <hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
-</h1>
-<h2>
-  I am also working on using the muscle models I developed to design different mechanisms using
-  the coiled artifical muscles for various applications. Here's an example of using these muscles as a
-  an actuator to bend and twist an octopus arm.
-</h2>
-</text>
-<iframe
-  id="OctopusArmFrame"
-  title="Octopus Arm"
-  width="75%"
-  height="75%"
-  style="margin: auto;border: 3px solid black;"
-  src="monocoil_active.html">
-</iframe>
-<h2>
-  Here's another example of the muscles being used in antagonstic arrangment that is analogous to
-  the bicep and tricep in a human arm. For the example shown below I had to extended the capability
-  of our simulator PyElastica to be able to handle triangluar mesh based rigid bodies and surfaces.
-</h2>
-</text>
-<iframe
-  id="AntagonsticArmFrame"
-  title="Antagonstic Arm"
-  width="75%"
-  height="75%"
-  style="margin: auto;border: 3px solid black;"
-  src="monocoil_active.html">
-</iframe>
 
-<text style="display: inline-block;width: 100vw;">
-  <h1>
-    <!-- <br> -->
-    <b>Navigation on Complex Environments</b>
-    <hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
-  </h1>
+<button type="button" class="collapsible"><h1>Muscle Based Mechanisms</h1></button>
+<div class="content">
+  <h2>
+    I am also working on using the muscle models I developed to design different mechanisms using
+    the coiled artifical muscles for various applications. Here's an example of using these muscles as a
+    an actuator to bend and twist an octopus arm.
+  </h2>
+  </text>
+  <iframe
+    id="OctopusArmFrame"
+    title="Octopus Arm"
+    width="75%"
+    height="75%"
+    style="margin: auto;border: 3px solid black;"
+    src="monocoil_active.html">
+  </iframe>
+  <h2>
+    Here's another example of the muscles being used in antagonstic arrangment that is analogous to
+    the bicep and tricep in a human arm. For the example shown below I had to extended the capability
+    of our simulator PyElastica to be able to handle triangluar mesh based rigid bodies and surfaces.
+  </h2>
+  </text>
+  <iframe
+    id="AntagonsticArmFrame"
+    title="Antagonstic Arm"
+    width="75%"
+    height="75%"
+    style="margin: auto;border: 3px solid black;"
+    src="monocoil_active.html">
+  </iframe>
+  </div>
+
+  <button type="button" class="collapsible"><h1>Navigation on Complex Environments</h1></button>
+  <div class="content">
   <h2>
     One of the other applications of hte new triangluar mesh based surfaces import capability I developed was to use it
     to test out some RL based control strategies for limbless soft robot navigation our team has been working on. Shown below
@@ -123,6 +118,7 @@
     style="margin: auto;border: 3px solid black;"
     src="monocoil_active.html">
   </iframe>
+  </div>
 
   <script>
     var coll = document.getElementsByClassName("collapsible");
