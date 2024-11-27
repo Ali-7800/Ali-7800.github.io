@@ -99,7 +99,7 @@ header {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #aa0404;
+  border-right: 1px solid #000000;
   text-decoration: none;
 }
 .header li a:hover,
