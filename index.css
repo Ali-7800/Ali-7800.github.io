@@ -62,19 +62,26 @@ b{
   background-color: #ddd;
   color: black;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #aa0404;
-  color: white;
-}
-
-.header {
-  background-color: #fff;
+header {
+  background-color: #333333;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 3;
+}
+
+.header a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 .header ul {
@@ -82,21 +89,18 @@ b{
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #333333;
 }
-
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #333333;
   text-decoration: none;
 }
-
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
 }
-
 .header .logo {
   display: block;
   float: left;
@@ -104,17 +108,13 @@ b{
   padding: 10px 20px;
   text-decoration: none;
 }
-
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
-
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -123,7 +123,6 @@ b{
   position: relative;
   user-select: none;
 }
-
 .header .menu-icon .navicon {
   background: #333;
   display: block;
@@ -132,7 +131,6 @@ b{
   transition: background .2s ease-out;
   width: 18px;
 }
-
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
@@ -143,44 +141,33 @@ b{
   transition: all .2s ease-out;
   width: 100%;
 }
-
 .header .menu-icon .navicon:before {
   top: 5px;
 }
-
 .header .menu-icon .navicon:after {
   top: -5px;
 }
-
 /* menu btn */
-
 .header .menu-btn {
   display: none;
 }
-
 .header .menu-btn:checked ~ .menu {
   max-height: 240px;
 }
-
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
-
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
-
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
-
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
 /* 48em = 768px */
-
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -197,7 +184,15 @@ b{
     display: none;
   }
 }
+.pic {
+  border: #aa0404;
+}
 
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #aa0404;
+  color: white;
+}
 
 .pic {
   border: #aa0404;
