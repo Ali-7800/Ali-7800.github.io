@@ -84,6 +84,11 @@ header {
   color: black;
 }
 
+.header a:active {
+  background-color: #aa0404;
+  color: black;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
