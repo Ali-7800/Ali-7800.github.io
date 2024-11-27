@@ -84,7 +84,7 @@ header {
   color: black;
 }
 
-.header a:active {
+.header a .active {
   background-color: #aa0404;
   color: black;
 }
@@ -99,7 +99,7 @@ header {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #333333;
+  border-right: 1px solid #aa0404;
   text-decoration: none;
 }
 .header li a:hover,
