@@ -107,7 +107,8 @@ header {
   background-color: #f4f4f4;
 }
 
-.header li a:active{
+.header li a .active,
+.header .menu-btn .active{
   background-color: #aa0404;
 }
 
