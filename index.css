@@ -1,21 +1,8 @@
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  background-color: #dcdcdc
+  background-color: #4a4a4a
 }
-
-#overlay {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #333333;
-  -moz-opacity:.80;
-  filter:alpha(opacity=80);
-  opacity:.80;
-  z-index: 10000000;
- }
 
 a:link {
   color: red;
@@ -54,7 +41,7 @@ b{
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   font-size: 24px;
 }
@@ -79,7 +66,7 @@ header {
   background-color: #333333;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
-  width: 100%;
+  width: 98.5%;
   z-index: 3;
 }
 
@@ -143,7 +130,7 @@ header {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 28px 28px;
   position: relative;
   user-select: none;
 }
@@ -235,11 +222,10 @@ h2 {
   color: rgb(59, 59, 59);
   /* text-align: center; */
   width:80%;
-  font-size: clamp(1.8rem, 2vw, 2.8rem);
+  font-size: clamp(1.8rem, 4vw, 5rem);
   margin: 10px;
   font-weight: 50;
 }
-
 
 .home_content {
   position: relative;
@@ -247,18 +233,22 @@ h2 {
 }
 .home_content .cover {
   position: absolute;
-  top: 5%;
-  right: 5%;
-  bottom: 5%;
-  left: 5%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
   background: #ffffff;
   opacity:0.85;
+}
+.home_content .cover:hover {
+  background: #ffffff;
+  opacity:0.95;
 }
 
 .home_content .cover .text {
   margin: 5%;
   text-align: center;
-  font-size:3.5vw;
+  font-size:3.5vh;
   opacity:1;
 }
 
