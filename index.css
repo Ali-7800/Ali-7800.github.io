@@ -249,12 +249,16 @@ h2 {
 }
 .home_content .cover {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #000;
-  opacity:0.5;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background: #c4c4c4;
+  opacity:0.75;
+}
+
+.home_content .cover .text {
+  opacity:1;
 }
 
 .collapsible {
