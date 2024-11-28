@@ -1,40 +1,39 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Ali Albazroun</title>
-    <link rel="stylesheet" href="index.css">
-    </head>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Ali Albazroun</title>
+  <link rel="stylesheet" href="index.css">
+  </head>
 
 <body>
-  <header class="header"style="display: block;">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="research.html">Research</a></li>
-      <li><a href="coursework.html">Coursework</a></li>
-      <li><a href="personal.html">Personal Projects</a></li>
-      <li><a href="bio.html">Bio</a></li>
-    </ul>
-  </header>
+<header class="header" style="display: block;">
+  <input class="menu-btn" type="checkbox" id="menu-btn">
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="research.html">Research</a></li>
+    <li><a href="coursework.html">Coursework</a></li>
+    <li><a href="personal.html">Personal Projects</a></li>
+    <li><a href="bio.html">Bio</a></li>
+  </ul>
+</header>
 
 <div class="banner">
-  <br>
-  <br>
-  <br>
+<br>
+<br>
+<br>
 <div class="row">
-  <div class="column">
-    <img src="pictures/antagonstic.gif">
-  </div>
-  <div class="column">
-    <img src="pictures/board_poster.PNG">
-  </div>
-  <div class="column">
-    <img src="pictures/sand_and_gravel.gif">
-  </div>
-  <div class="column">
-    <img src="pictures/microbot.jpg">
-  </div>
+<div class="column">
+  <img src="pictures/antagonstic.gif">
+</div>
+<div class="column">
+  <img src="pictures/board_poster.PNG">
+</div>
+<div class="column">
+  <img src="pictures/sand_and_gravel.gif">
+</div>
+<div class="column">
+  <img src="pictures/microbot.jpg">
+</div>
 </div>
 
 </div>
@@ -42,241 +41,245 @@
 <div class="research_content" style="margin-left: 5vw;margin-right: 5vw;">
 <text style="display: inline-block;width: 100%;">
 
-  <h1>
-  <br><b>Graduate Research</b>
-  <hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
-  </h1>
+<h1>
+<br><b>Graduate Research</b>
+<hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
+</h1>
 </text>
 <text style="display: inline-block;width: 100%;">
-  <h1>
-    Currently a member of <a href="https://mattia-lab.com/">Gazzola Lab</a>. 
-    My current research revolves around using computational methods to model and
-    understand slender soft body systems. I am interested in using these methods 
-    for designing soft robot actuators and developing control frameworks to 
-    control soft robots in complex environments. Below are some highlights of
-    my work.
-  </h1>
-  </text>
+<h1>
+  Currently a member of <a href="https://mattia-lab.com/">Gazzola Lab</a>. 
+  My current research revolves around using computational methods to model and
+  understand slender soft body systems. I am interested in using these methods 
+  for designing soft robot actuators and developing control frameworks to 
+  control soft robots in complex environments. Below are some highlights of
+  my work.
+</h1>
+</text>
 
 
-<button type="button" class="collapsible">Modeling Coiled Artifical Muscles</button>
-<div class="content">
-  <h2>
-    Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
-    when heated/chemically actuated. These types of have several advantages that make interesting for
-    robotic applications. These advantages include the following:
-    <ul>
-      <li> Being easy and inexpensive to manufacture </li>
-      <li> Operate without hysteresis </li>
-      <li> Provide more than 30% reversible contraction </li>
-      <li> Provide millions of cycles of stroke without significant degradation </li>
-    </ul>
-    Below is an example of these muscles in action. I developed a model for the actuation of these muscles
-    and used our simulator <a href="https://github.com/GazzolaLab/PyElastica">PyElastica</a> to simulate 
-    the actuation of single fiber muscle. We work closely with the <a href="https://tawfick.mechse.illinois.edu/">kinetic Materials Research Group</a>
-    who manufacture these muscles and provides us with experimental data to validate our models.
-  </h2>
+<button type="button" class="collapsible active">Modeling Coiled Artifical Muscles</button>
+<div class="content" style="max-height: 2143px;">
+<h1>
+  Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
+  when heated/chemically actuated. These types of have several advantages that make interesting for
+  robotic applications. These advantages include the following:
+  <ul>
+    <li> Being easy and inexpensive to manufacture </li>
+    <li> Operate without hysteresis </li>
+    <li> Provide more than 30% reversible contraction </li>
+    <li> Provide millions of cycles of stroke without significant degradation </li>
+  </ul>
+  Below is an example of these muscles in action. I developed a model for the actuation of these muscles
+  and used our simulator <a href="https://github.com/GazzolaLab/PyElastica">PyElastica</a> to simulate 
+  the actuation of single fiber muscle. We work closely with the <a href="https://tawfick.mechse.illinois.edu/">kinetic Materials Research Group</a>
+  who manufacture these muscles and provides us with experimental data to validate our models.
+</h1>
 
-  <a href="https://ali-7800.github.io/monocoil_active.html">
-    <img src="pictures/monocoil.png" alt="monocoil active">
-  </a>
-
-  </div>
-
-
-<button type="button" class="collapsible">Muscle Based Mechanisms</button>
-<div class="content">
-  <h2>
-    I am also working on using the muscle models I developed to design different mechanisms using
-    the coiled artifical muscles for various applications. Here's an example of using these muscles as a
-    an actuator to bend and twist an octopus arm.
-  </h2>
-  </text>
-  <a href="https://ali-7800.github.io/monocoil_active.html">
-    <img src="pictures/monocoil.png" alt="monocoil active">
-  </a>
-  <h2>
-    Here's another example of the muscles being used in antagonstic arrangment that is analogous to
-    the bicep and tricep in a human arm. For the example shown below I had to extended the capability
-    of our simulator PyElastica to be able to handle triangluar mesh based rigid bodies and surfaces.
-  </h2>
-  </text>
-  <a href="https://ali-7800.github.io/monocoil_active.html">
-    <img src="pictures/monocoil.png" alt="monocoil active">
-  </a>
-  </div>
-
-  <button type="button" class="collapsible">Navigation on Complex Environments</button>
-  <div class="content">
-  <h2>
-    One of the other applications of the new triangluar mesh based surfaces import capability I developed was to use it
-    to test out some RL based control strategies for limbless soft robot navigation our team has been working on. Shown below
-    are some examples of these control strategies being used on reconstructed real environments.
-  </h2>
-  </text>
-  <a href="https://ali-7800.github.io/monocoil_active.html">
-    <img src="pictures/monocoil.png" alt="monocoil active">
-  </a>
-  <h2>
-  </h2>
-  </text>
-  <a href="https://ali-7800.github.io/monocoil_active.html">
-    <img src="pictures/monocoil.png" alt="monocoil active">
-  </a>
-  </div>
-  <text style="display: inline-block;width: 100%;">
-  <h1>
-    <br><b>Undergraduate Research</b>
-    <hr  align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
-  </h1>
-  </text>
-
-  <text style="display: inline-block;width: 100%;">
-    <h1>
-      During my undergraduate studies I experimented with doing research in many different fields and
-      I developed many useful skills as a result. Many of them had a computational focus, but some also 
-      involved hands-on work such as gathering experimental data or to setting up/designing hardware systems.
-      Below are some of the projects I worked on during my bachelor's.
-    </h1>
-    </text>
-
-
-  <button type="button" class="collapsible">Microbot Leg Modeling</button>
-  <div class="content">
-  </text>
-  <h2>
-    I worked on this project during my time at KAUST in Summer of 2021. The project was to 
-    develop a computational model for a microbot leg designed by Hussein Hussein (who was a 
-    postdoc at KAUST at the time). The model was to be used to understand and control the 
-    microbot leg to make it walk. Shown below is the microbot next to my finger for scale.
-    <img src="pictures/microbot.jpg" alt="microbot">
-
-    I had three main tasks in this project.
-    <ul>
-      <li> Develop an analytical model for the microbot leg </li>
-      <li> Simulate the leg using this model in MATLAB </li>
-      <li> Collect experimental data to validate the simulation and model  </li>
-    </ul>
-
-    This was a unique experience for me at the time because it was my first time developing a
-    model for a non-rigid body robotic system (the leg had elements that would deform to move it).
-    It was also my first time creating my own simulation of a physical system (instead of using a simulator).
-    Additionaly, I learned how to use a probe station (shown below) to gather data for micro sized systems. 
-
-    <img src="pictures/probe.jpeg" alt="microbot">
-
-    For more details on this project, you can take a look at the <a href="assets/microrobot poster.pdf" download="">poster</a>
-    I made for KAUST Internship Program Poster Symposium. Now that I think back about this project, it did end
-    up starting my passion for using computational tools to model physical systems.
-  </h2>
-  </text>
-  </div>
-
-  <button type="button" class="collapsible">Autonomous Tractor</button>
-  <div class="content">
-  </text>
-  <h2>
-    I worked on this project during my Junior when I got into the DPI Research Scholars program. 
-    The project goal was to convert a regular tractor into an autonomous one. The project was supervised
-    by professor Girish Chowdhary here at Illinois. My tasks for the project was to setup the hardware 
-    systems (computers, sensors, and actuators) that will be used to automate the tractor. A picture of
-    me riding the tractor is shown below.
-
-    <img src="pictures/tractor.jpg" alt="tractor">
-
-    I learned a lot about setting up hardware systems during this opportunity such selecting appropriate
-    computers, depth/stereo cameras, lidars, and motors for a particular application, installing Ubuntu and ROS on a computer,
-    installing ROS wrappers for different sensors, using ROS to communicate between multiple computers and so
-    much more. Below are pictures of the Velodyne Puck Lidar and Intel Realsense D435i data running in Rviz.
-
-    <img src="pictures/realsense.jpg" alt="depth camera">
-    <img src="pictures/puck.gif" alt="lidar">
-
-    It was an overall great learning experience, and it gave me enough understanding of hardware selection and
-    setup that I can start making my own robotics projects. You can see some of my personal projects inspired by the
-    things I learned in this project through <a href="personal.html">here</a>!
-  
-  </h2>
-  </text>
-  </div>
-
-  <button type="button" class="collapsible">Rock Detection and Segmentation</button>
-  <div class="content">
-  </text>
-  <h2>
-    I worked on this project during summer 2020 when I got into the Carnegie Mellon University Robotics Institute Summer
-    Scholars (RISS) program. I worked on the <a href="https://irislunarrover.space/">Iris Lunar Rover</a> teleoperations team 
-    whose main objective was to create a system for localizing the rover when it is on the moon based on its surroundings.
-    Since the only thing surrounding the rover on the moon are rocks, rock detection and segementation are crucial for
-    figuring out where the rover is with respect to its surroundings. My task was to develop software that can detect and
-    segement rocks from camera images to be used for localization. An example of rocks being detected and segemented is 
-    shown below.
-
-    <img src="pictures/overlay_test_image.png" alt="rock segementation">
-
-    This was my first purely computational project as I was working remotely due to the Covid-19 pandemic. I learned a lot
-    about computer vision, image processing, and methods for localization and mapping such as SLAM. It also exponentially 
-    improved my programming skills and taught me a lot of the best practices for programming (writing documentation, separate
-    long code into multiple files and so on). I also wrote my first research paper which was published in the 2020 issue of
-    the <a href="https://riss.ri.cmu.edu/research_showcase/working-papers-journals/">Robotics Institute Summer Scholar'
-    Working Papers Journals.</a>/ For more details on the project you can check the paper or the
-    <a href="assets/RISS-Poster-2020.pdf" download="">poster</a> I made for RISS poster session.
-
-    It was unfortunate that IRIS never made to the moon due to Astrobotic's Peregrine lander experiencing an anomaly that 
-    would prevent it from making a soft landing on the moon, which meant it had to make a controlled reentry to Earth. Although
-    the work we did never made it to the moon, me and everyone else who worked on the project learned a lot from this project
-    that would help future generations of rovers and we succeeded in making a rover that went closer to the moon than any other 
-    student built rover has to date.
-  
-  </h2>
-  </text>
-  </div>
-
-  <button type="button" class="collapsible">Magnetometer Based Mapping</button>
-  <div class="content">
-  </text>
-  <h2>
-    WIP
-  </h2>
-  </text>
-  </div>
-
-
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
+<a href="https://ali-7800.github.io/monocoil_active.html">
+  <img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%">
+</a>
 
 </div>
-  
-<div class="topnav" style="display:block;">
-  <a href="https://github.com/Ali-7800" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="height:20px;vertical-align:middle;"> GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/alialbazroun/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height:20px;vertical-align:middle;"> LinkedIn
-  </a>
-  <a href="https://www.youtube.com/@alialbazroun8111" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="height:20px;vertical-align:middle;"> YouTube
-  </a>
-  <a href="https://scholar.google.com/citations?user=FYRfxpEAAAAJ&amp;hl=en" target="_blank">
-    <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar" style="height:20px;vertical-align:middle;"> Google Scholar
-  </a>
-  </div>
-  
-</body>
 
-</html>
+
+<button type="button" class="collapsible active">Muscle Based Mechanisms</button>
+<div class="content" style="max-height: 3067px;">
+<h1>
+  I am also working on using the muscle models I developed to design different mechanisms using
+  the coiled artifical muscles for various applications. Here's an example of using these muscles as a
+  an actuator to bend and twist an octopus arm.
+</h1>
+
+<a href="https://ali-7800.github.io/monocoil_active.html">
+  <img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%">
+</a>
+<h1>
+  Here's another example of the muscles being used in antagonstic arrangment that is analogous to
+  the bicep and tricep in a human arm. For the example shown below I had to extended the capability
+  of our simulator PyElastica to be able to handle triangluar mesh based rigid bodies and surfaces.
+</h1>
+
+<a href="https://ali-7800.github.io/monocoil_active.html">
+  
+<img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%"></a>
+</div>
+
+<button type="button" class="collapsible active">Navigation on Complex Environments</button>
+<div class="content" style="max-height: 2812px;">
+<h1>
+  One of the other applications of the new triangluar mesh based surfaces import capability I developed was to use it
+  to test out some RL based control strategies for limbless soft robot navigation our team has been working on. Shown below
+  are some examples of these control strategies being used on reconstructed real environments.
+</h1>
+
+<a href="https://ali-7800.github.io/monocoil_active.html">
+  
+<img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%"></a>
+<h2>
+</h2>
+
+<a href="https://ali-7800.github.io/monocoil_active.html">
+  
+<img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%"></a>
+</div>
+<text style="display: inline-block;width: 100%;">
+<h1>
+  <br><b>Undergraduate Research</b>
+  <hr align="left" style="height:2px;width:80%;border-width:0;color:rgb(0, 0, 0);background-color:gray">
+</h1>
+</text>
+
+<text style="display: inline-block;width: 100%;">
+  <h1>
+    During my undergraduate studies I experimented with doing research in many different fields and
+    I developed many useful skills as a result. Many of them had a computational focus, but some also 
+    involved hands-on work such as gathering experimental data or to setting up/designing hardware systems.
+    Below are some of the projects I worked on during my bachelor's.
+  </h1>
+  </text>
+
+
+<button type="button" class="collapsible active">Microbot Leg Modeling</button>
+<div class="content" style="max-height: 2679px;">
+
+<h1>
+  I worked on this project during my time at KAUST in Summer of 2021. The project was to 
+  develop a computational model for a microbot leg designed by Hussein Hussein (who was a 
+  postdoc at KAUST at the time). The model was to be used to understand and control the 
+  microbot leg to make it walk. Shown below is the microbot next to my finger for scale.
+  <img src="pictures/microbot.jpg" alt="microbot" style="display:block;margin:auto;height:50%">
+<br>
+
+  I had three main tasks in this project.
+  <ul>
+    <li> Develop an analytical model for the microbot leg </li>
+    <li> Simulate the leg using this model in MATLAB </li>
+    <li> Collect experimental data to validate the simulation and model  </li>
+  </ul>
+
+  This was a unique experience for me at the time because it was my first time developing a
+  model for a non-rigid body robotic system (the leg had elements that would deform to move it).
+  It was also my first time creating my own simulation of a physical system (instead of using a simulator).
+  Additionaly, I learned how to use a probe station (shown below) to gather data for micro sized systems. 
+
+  <img src="pictures/probe.jpeg" alt="probe" style="display:block;margin:auto;height:50%">
+
+  For more details on this project, you can take a look at the <a href="assets/microrobot poster.pdf" download="">poster</a>
+  I made for KAUST Internship Program Poster Symposium. Now that I think back about this project, it did end
+  up starting my passion for using computational tools to model physical systems.
+</h1>
+
+</div>
+
+<button type="button" class="collapsible active">Autonomous Tractor</button>
+<div class="content" style="max-height: 4980px;">
+
+<h1>
+  I worked on this project during my Junior when I got into the DPI Research Scholars program. 
+  The project goal was to convert a regular tractor into an autonomous one. The project was supervised
+  by professor Girish Chowdhary here at Illinois. My tasks for the project was to setup the hardware 
+  systems (computers, sensors, and actuators) that will be used to automate the tractor. A picture of
+  me riding the tractor is shown below.
+  
+  <br>
+<img src="pictures/tractor.jpg" alt="tractor" style="display:block;margin:auto;width:100%"><br>
+
+  I learned a lot about setting up hardware systems during this opportunity such selecting appropriate
+  computers, depth/stereo cameras, lidars, and motors for a particular application, installing Ubuntu and ROS on a computer,
+  installing ROS wrappers for different sensors, using ROS to communicate between multiple computers and so
+  much more. Below are pictures of the Velodyne Puck Lidar and Intel Realsense D435i data running in Rviz.
+
+  <img src="pictures/realsense.jpg" alt="depth camera" style="display:inline-block;margin:auto;height:50%">
+  <img src="pictures/puck.gif" alt="lidar" style="display:inline-block;margin:auto;height:50%;max-width:50%">
+<br>
+
+  It was an overall great learning experience, and it gave me enough understanding of hardware selection and
+  setup that I can start making my own robotics projects. You can see some of my personal projects inspired by the
+  things I learned in this project through <a href="personal.html">here</a>!
+
+</h1>
+
+</div>
+
+<button type="button" class="collapsible active">Rock Detection and Segmentation</button>
+<div class="content" style="max-height: 2790px;">
+
+<h1>
+  I worked on this project during summer 2020 when I got into the Carnegie Mellon University Robotics Institute Summer
+  Scholars (RISS) program. I worked on the <a href="https://irislunarrover.space/">Iris Lunar Rover</a> teleoperations team 
+  whose main objective was to create a system for localizing the rover when it is on the moon based on its surroundings.
+  Since the only thing surrounding the rover on the moon are rocks, rock detection and segementation are crucial for
+  figuring out where the rover is with respect to its surroundings. My task was to develop software that can detect and
+  segement rocks from camera images to be used for localization. An example of rocks being detected and segemented is 
+  shown below.
+
+  <img src="pictures/overlay_test_image.png" alt="rock segementation" style="display:block;margin:auto;height:50%">
+
+  This was my first purely computational project as I was working remotely due to the Covid-19 pandemic. I learned a lot
+  about computer vision, image processing, and methods for localization and mapping such as SLAM. It also exponentially 
+  improved my programming skills and taught me a lot of the best practices for programming (writing documentation, separate
+  long code into multiple files and so on). I also wrote my first research paper which was published in the 2020 issue of
+  the <a href="https://riss.ri.cmu.edu/research_showcase/working-papers-journals/">Robotics Institute Summer Scholar'
+  Working Papers Journals.</a>/ For more details on the project you can check the paper or the
+  <a href="assets/RISS-Poster-2020.pdf" download="">poster</a> I made for RISS poster session.
+
+  It was unfortunate that IRIS never made to the moon due to Astrobotic's Peregrine lander experiencing an anomaly that 
+  would prevent it from making a soft landing on the moon, which meant it had to make a controlled reentry to Earth. Although
+  the work we did never made it to the moon, me and everyone else who worked on the project learned a lot from this project
+  that would help future generations of rovers and we succeeded in making a rover that went closer to the moon than any other 
+  student built rover has to date.
+
+</h1>
+
+</div>
+
+<button type="button" class="collapsible active">Magnetometer Based Mapping</button>
+<div class="content" style="max-height: 73px;">
+
+<h2>
+  WIP
+</h2>
+
+</div>
+
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</div>
+
+<div class="topnav" style="display:block;">
+<a href="https://github.com/Ali-7800" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="height:20px;vertical-align:middle;"> GitHub
+</a>
+<a href="https://www.linkedin.com/in/alialbazroun/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height:20px;vertical-align:middle;"> LinkedIn
+</a>
+<a href="https://www.youtube.com/@alialbazroun8111" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="height:20px;vertical-align:middle;"> YouTube
+</a>
+<a href="https://scholar.google.com/citations?user=FYRfxpEAAAAJ&amp;hl=en" target="_blank">
+  <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar" style="height:20px;vertical-align:middle;"> Google Scholar
+</a>
+</div>
+
+
+
+
+</body></html>
