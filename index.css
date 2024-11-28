@@ -240,10 +240,22 @@ h2 {
   font-weight: 50;
 }
 
-.home_content {
-  display: inline-flex;
-}
 
+.home_content {
+  position: relative;
+  flex: 1 0 auto;
+  margin: 10px 15px;
+  padding: 10px;
+}
+.home_content .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity:0.5;
+}
 
 .collapsible {
   background-color: #333;
