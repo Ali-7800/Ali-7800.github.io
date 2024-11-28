@@ -4,14 +4,18 @@ body{
   background-color: #dcdcdc
 }
 
-div.sticky {
-  position: sticky;
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
-  background-color: rgb(149, 149, 149);
-  opacity: 0.5;
-  padding: 50px;
-  font-size: 20px;
-}
+  bottom: 0;
+  background-color: #333333;
+  -moz-opacity:.80;
+  filter:alpha(opacity=80);
+  opacity:.80;
+  z-index: 10000000;
+ }
 
 a:link {
   color: red;
