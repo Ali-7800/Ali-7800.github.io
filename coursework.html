@@ -1,0 +1,103 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ali Albazroun</title>
+    <link rel="stylesheet" href="index.css">
+    </head>
+
+<body>
+  <header class="header"style="display: block;">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a class="active" href="coursework.html">Coursework</a></li>
+      <li><a href="personal.html">Personal Projects</a></li>
+      <li><a href="bio.html">Bio</a></li>
+    </ul>
+  </header>
+
+
+<div class="research_content" style="margin-left: 5vw;margin-right: 5vw;">
+<text style="display: inline-block;width: 100%;">
+  <br>
+  <br>
+  <br>
+  <br>
+</text>
+<text style="display: inline-block;width: 100%;">
+  <h2>
+    I took many interesting courses here at Illinois that covered a wide variety of topics
+    such as dynamics, control, modeling, computational methods, simulation, and robotics. These courses
+    helped me learn about these topics in more detail as well as develop a lot of important skills
+    related to these fields. Below, I will give a brief summary of the courses that I found to be 
+    most interesting and I will include any project work I have done for these courses.
+  </h2>
+  </text>
+
+<button type="button" class="collapsible">CS 418: Interactive Computer Graphics</button>
+<div class="content">
+  <h2>
+    WIP
+  </h2>
+  </div>
+
+<button type="button" class="collapsible">ECE 598JK: Intro to Humanoid Robotics</button>
+<div class="content">
+  <h2>
+    WIP
+  </h2>
+  </div>
+
+  <button type="button" class="collapsible">ME 446: Robot Dynamics and Control</button>
+  <div class="content">
+    <h2>
+      WIP
+    </h2>
+  </div>
+
+  <button type="button" class="collapsible">ME 445: Intro to Robotics</button>
+  <div class="content">
+    <h2>
+      WIP
+    </h2>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</div>
+  
+<div class="topnav" style="display:block;">
+  <a href="https://github.com/Ali-7800" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="height:20px;vertical-align:middle;"> GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/alialbazroun/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height:20px;vertical-align:middle;"> LinkedIn
+  </a>
+  <a href="https://www.youtube.com/@alialbazroun8111" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="height:20px;vertical-align:middle;"> YouTube
+  </a>
+  <a href="https://scholar.google.com/citations?user=FYRfxpEAAAAJ&amp;hl=en" target="_blank">
+    <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar" style="height:20px;vertical-align:middle;"> Google Scholar
+  </a>
+  </div>
+  
+</body>
+
+</html>
