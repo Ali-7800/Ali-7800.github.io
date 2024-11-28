@@ -4,6 +4,15 @@ body{
   background-color: #dcdcdc
 }
 
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(149, 149, 149);
+  opacity: 0.5;
+  padding: 50px;
+  font-size: 20px;
+}
+
 a:link {
   color: red;
   background-color: transparent;
