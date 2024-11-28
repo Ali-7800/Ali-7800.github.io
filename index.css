@@ -1,7 +1,7 @@
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  background-color: #b0b0b0
+  background-color: #dcdcdc
 }
 
 a:link {
@@ -128,7 +128,6 @@ header {
 /* menu icon */
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 28px;
   position: relative;
