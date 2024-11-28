@@ -135,7 +135,7 @@ header {
   user-select: none;
 }
 .header .menu-icon .navicon {
-  background: #333;
+  background: #ffffff;
   display: block;
   height: 2px;
   position: relative;
@@ -144,7 +144,7 @@ header {
 }
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #ffffff;
   content: '';
   display: block;
   height: 100%;
@@ -247,9 +247,12 @@ h2 {
 
 .home_content .cover .text {
   position: absolute;
-  margin: 10%;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
   text-align: center;
-  font-size:3.5vh;
+  font-size:150%;
   opacity:1;
 }
 
