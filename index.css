@@ -244,20 +244,21 @@ h2 {
 .home_content {
   position: relative;
   flex: 1 0 auto;
-  margin: 10px 15px;
-  padding: 10px;
 }
 .home_content .cover {
   position: absolute;
-  top: 10%;
-  right: 10%;
-  bottom: 10%;
-  left: 10%;
-  background: #c4c4c4;
-  opacity:0.75;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  background: #ffffff;
+  opacity:0.85;
 }
 
 .home_content .cover .text {
+  margin: 5%;
+  text-align: center;
+  font-size:3.5vw;
   opacity:1;
 }
 
