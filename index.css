@@ -84,9 +84,9 @@ header {
   color: black;
 }
 
-.header a .active {
+.header .active {
   background-color: #aa0404;
-  color: black;
+  color: #ffffff;
 }
 
 .header ul {
@@ -238,7 +238,7 @@ h2 {
   right: 10%;
   bottom: 20%;
   background: transparent;
-  opacity:0.85;
+  opacity:0.95;
 }
 
 .home_content .cover .text {
