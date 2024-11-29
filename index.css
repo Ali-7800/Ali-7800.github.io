@@ -232,13 +232,17 @@ h2 {
   flex: 1 0 auto;
 }
 .home_content .cover {
-  position:fixed;
-  top: 20%;
-  left: 10%;
-  right: 10%;
-  bottom: 20%;
+  position:absolute;
+  top:10%;
+  bottom:5%;
+  left:10%;
+  right:10%;
+  display:block;
   background: transparent;
-  opacity:0.95;
+  opacity:0.85;
+}
+.home_content .cover:hover {
+  opacity:1;
 }
 
 .home_content .cover .text {
