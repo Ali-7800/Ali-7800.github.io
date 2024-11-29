@@ -1,7 +1,8 @@
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  background-color: #dcdcdc
+  background-color: #dcdcdc;
+  margin: 0;
 }
 
 a:link {
