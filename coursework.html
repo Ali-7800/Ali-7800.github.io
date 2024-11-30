@@ -54,7 +54,7 @@
 </h1>
 </text>
 
-<button type="button" class="collapsible">CS 418: Interactive Computer Graphics</button>
+<button type="button" class="collapsible" id="CS418">CS 418: Interactive Computer Graphics</button>
 <div class="content">
 <h2>
   Professor: <a href="https://luthert.web.illinois.edu/">Luther A. Tychonievich</a>
@@ -63,21 +63,21 @@
 </h2>
 </div>
 
-<button type="button" class="collapsible">ECE 598JK: Intro to Humanoid Robotics</button>
+<button type="button" class="collapsible" id="ECE598JK">ECE 598JK: Intro to Humanoid Robotics</button>
 <div class="content">
 <h2>
   WIP
 </h2>
 </div>
 
-<button type="button" class="collapsible">ME 446: Robot Dynamics and Control</button>
+<button type="button" class="collapsible" id="ME446">ME 446: Robot Dynamics and Control</button>
 <div class="content">
   <h2>
     WIP
   </h2>
 </div>
 
-<button type="button" class="collapsible">ME 445: Intro to Robotics</button>
+<button type="button" class="collapsible" id="ME445">ME 445: Intro to Robotics</button>
 <div class="content">
   <h2>
     WIP
@@ -98,6 +98,15 @@
         content.style.maxHeight = content.scrollHeight + "px";
       } 
     });
+    if (window.location.href.includes(coll[i].id)){
+      coll[i].classList.toggle("active");
+      var content = coll[i].nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    }
   }
   </script>
 

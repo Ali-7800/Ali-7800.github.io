@@ -62,7 +62,7 @@
 </text>
 
 
-<button type="button" class="collapsible">Modeling Coiled Artificial Muscles</button>
+<button type="button" class="collapsible" id="muscle">Modeling Coiled Artificial Muscles</button>
 <div class="content" style="">
 <h1>
   Materials that expand anisotropically can be used to make coiled muscles that reversibly untwist
@@ -87,7 +87,7 @@
 </div>
 
 
-<button type="button" class="collapsible">Muscle Based Mechanisms</button>
+<button type="button" class="collapsible" id="mechanisms">Muscle Based Mechanisms</button>
 <div class="content" style="">
 <h1>
   I am also working on using the muscle models I developed to design different mechanisms using
@@ -109,7 +109,7 @@
 <img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%"></a>
 </div>
 
-<button type="button" class="collapsible">Navigation on Complex Environments</button>
+<button type="button" class="collapsible" id="mesh">Navigation on Complex Environments</button>
 <div class="content" style="">
 <h1>
   One of the other applications of the new triangluar mesh based surfaces import capability I developed was to use it
@@ -144,7 +144,7 @@
   </text>
 
 
-<button type="button" class="collapsible">Microbot Leg Modeling</button>
+<button type="button" class="collapsible" id="microbot">Microbot Leg Modeling</button>
 <div class="content" style="">
 
 <h1>
@@ -176,7 +176,7 @@
 
 </div>
 
-<button type="button" class="collapsible">Autonomous Tractor</button>
+<button type="button" class="collapsible" id="tractor">Autonomous Tractor</button>
 <div class="content" style="">
 
 <h1>
@@ -206,7 +206,7 @@
 
 </div>
 
-<button type="button" class="collapsible">Rock Detection and Segmentation</button>
+<button type="button" class="collapsible" id="IRIS">Rock Detection and Segmentation</button>
 <div class="content" style="">
 
 <h1>
@@ -238,7 +238,7 @@
 
 </div>
 
-<button type="button" class="collapsible">Magnetometer Based Mapping</button>
+<button type="button" class="collapsible" id="magnet">Magnetometer Based Mapping</button>
 <div class="content" style="">
 
 <h2>
@@ -263,6 +263,15 @@
         content.style.maxHeight = content.scrollHeight + "px";
       } 
     });
+    if (window.location.href.includes(coll[i].id)){
+      coll[i].classList.toggle("active");
+      var content = coll[i].nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    }
   }
   </script>
 
