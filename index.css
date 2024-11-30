@@ -238,7 +238,7 @@ h2 {
   position: absolute;
   text-align: center;
   padding: 10%;
-  font-size:clamp(0rem,3vw, 2.8rem);
+  font-size:clamp(0rem,3vw, 2rem);
   background-color:#ffffff;
   opacity:1;
 }
