@@ -275,8 +275,12 @@ h2 {
   font-size: clamp(1.8rem, 2vw, 2.8rem);
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.collapsible .active{
+  background-color: #aa0404;
+}
+
+.collapsible:hover{
+  background-color: #ddd;
 }
 
 .collapsible:after {
