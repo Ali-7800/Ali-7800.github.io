@@ -222,8 +222,8 @@ h2 {
 }
 .home_content .cover {
   position:absolute;
-  top:65px;
-  left:125px;
+  top:10%;
+  left:10%;
   width:75%;
   background: transparent;
   opacity:0.85;
