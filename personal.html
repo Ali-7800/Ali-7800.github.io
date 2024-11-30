@@ -86,11 +86,8 @@
       } 
     });
   }
-  const current = window.location.href;
-  document.querySelectorAll("#nav-tab a").forEach(function(elem){ 
-      if(elem.href.includes(current)){
-        elem.classList.add("active");
-      }
+  navigation.addEventListener("navigate", e => {
+    console.log(e.destination.url);
   });
   </script>
 
