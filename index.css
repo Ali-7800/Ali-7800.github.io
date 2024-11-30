@@ -221,9 +221,9 @@ h2 {
   flex: 1 0 auto;
 }
 .home_content .cover {
-  position:fixed;
-  top:15%;
-  bottom:10%;
+  position:absolute;
+  top:5%;
+  bottom:20%;
   left:10%;
   right:10%;
   display:block;
@@ -238,7 +238,7 @@ h2 {
   position: absolute;
   text-align: center;
   padding: 10%;
-  font-size:clamp(1.8rem, 2vw, 2.8rem);
+  font-size:clamp(0rem,3vw, 2.8rem);
   background-color:#ffffff;
   opacity:1;
 }
