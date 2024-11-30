@@ -85,8 +85,17 @@
         content.style.maxHeight = content.scrollHeight + "px";
       } 
     });
+    if (window.location.href.includes(coll[i].id)){
+      coll[i].classList.toggle("active");
+      var content = coll[i].nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    }
+
   }
-  console.log(window.location.href.includes(coll[1].id))
   </script>
 
 </div>
