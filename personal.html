@@ -86,9 +86,11 @@
       } 
     });
   }
-  navigation.addEventListener("navigate", e => {
-    console.log(e.destination.url);
-  });
+
+  setInterval(function()
+  {
+    console.log(location.href)
+  }, 100);
   </script>
 
 </div>
