@@ -63,8 +63,8 @@
 </h2>
 </div>
 
-<button type="button" class="collapsible">RC Omni-directional Car</button>
-<div class="content" id="ORBSLAM">
+<button type="button" class="collapsible"  id="ORBSLAM">RC Omni-directional Car</button>
+<div class="content">
 <h2>
   WIP
 </h2>
@@ -86,6 +86,12 @@
       } 
     });
   }
+  const current = window.location.href;
+  document.querySelectorAll("#nav-tab a").forEach(function(elem){ 
+      if(elem.href.includes(current)){
+        elem.classList.add("active");
+      }
+  });
   </script>
 
 </div>
