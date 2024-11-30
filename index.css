@@ -222,11 +222,7 @@ h2 {
 }
 .home_content .cover {
   position:absolute;
-  top:5%;
-  bottom:20%;
-  left:10%;
-  right:10%;
-  display:block;
+  width:75%;
   background: transparent;
   opacity:0.85;
 }
@@ -237,18 +233,20 @@ h2 {
 .home_content .cover .text {
   position: absolute;
   text-align: center;
-  padding: 10%;
+  padding: 6%;
   font-size:clamp(0rem,3vw, 2rem);
   background-color:#ffffff;
   opacity:1;
 }
 
 .coverheader{
-  padding: 10px;
+  padding: 5px;
+  width:20%;
   cursor: move;
   z-index: 10;
-  background-color: #2196F3;
+  background-color: #aa0404;
   color: #fff;
+  text-align:center;
 }
 
 .banner {
