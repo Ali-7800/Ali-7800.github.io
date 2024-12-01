@@ -305,7 +305,8 @@ a:hover {
 
 .content {
   padding: 9px 9px;
-  width: 90%;
+  margin:auto;
+  width: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
