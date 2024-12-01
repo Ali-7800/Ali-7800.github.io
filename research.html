@@ -199,9 +199,10 @@
 <img src="pictures/tractor.jpeg" alt="tractor" style="display:block;margin:auto;width:50%"><br>
 
   I learned a lot about setting up hardware systems during this opportunity such selecting appropriate
-  computers, depth/stereo cameras, lidars, and motors for a particular application, installing Ubuntu and ROS on a computer,
+  computers, depth/stereo cameras, lidars, and motors for a particular application, installing Ubuntu and ROS on different computers,
   installing ROS wrappers for different sensors, using ROS to communicate between multiple computers and so
-  much more. Below are pictures of the Velodyne Puck Lidar and Intel Realsense D435i data running in Rviz.
+  much more. Below are pictures of the Velodyne Puck Lidar and Intel Realsense D435i running after I set them up.
+  
   <div class="row" style="margin:auto;max-width:70%">
     <div class="column" style="flex:35%;max-width:35%;">
       <img src="pictures/realsense.jpg" alt="depth camera">
@@ -256,7 +257,47 @@
 <div class="content">
 
 <h2>
-  WIP
+  I worked on two projects related to this topic with PhD student David Hanley from Tim Bretl's Group here at Illinois from 2019
+  to 2022. My work mainly involved designing PCBs and 3D printed parts to be used for magnetometer based indoor positioning purposes.
+  Here's a brief summary of both projects:
+
+  <ul>
+    <li> MagPIE2: Magnetic Positioning Indoor Estimation 2.0 Dataset </li>
+    <br>
+    As the name suggests, this is a follow up to the original <a href="https://bretl.csl.illinois.edu/magpie">MagPIE</a> dataset.
+    This dataset improves on the original by collecting magentometer data at different heights simultaneously and having data collected
+    with the sensors handheld (like the original) as well as on a wheeled robot. For this a new data collection rig needed to be designed
+    to satsify both goals. I designed the parts for the rig used in this project to be modular so that it can still be used for future datasets.
+    Below are pictures of the design I came up with being handled and mounted on a wheeled robot.
+
+    <div class="row" style="margin:auto;max-width:70%">
+      <div class="column" style="flex:35%;max-width:35%;">
+        <img src="pictures/Boxer_side_view.jpg">
+      </div><div class="column" style="flex:65%;max-width:65%;background-color:white;">
+        <img src="pictures/Walking_Pic.jpg">
+      </div>
+    </div>
+
+    I also used Cadence OrCAD modify the original PCBs used for magentometer and IMU data collection.
+
+    
+    <li> Moto Mod Magnetometer  </li>
+    <br>
+
+    This was the first project I worked on with David Hanley, and it involved creating a PCB that interfaces the RM3100 magnetometer with
+    the Moto Mod (which was a hardware attachement that allowed people to create custom attachements for their Motorola phones). The original idea
+    was to use this custom PCB attachement for the handheld data collection in the MagPIE2 dataset. However, we ended up pivoting away 
+    from the Moto Mod at some point in 2020 for several reasons. One of these reasons is that the Moto Mod was being discontinued, and another 
+    one is the lack of documentation on how to develop the code for interfacing the attachement with the Moto Mod. Although, the project was
+    not completed, I still learned some new things like PCB design with Autodesk Eagle and the PCB manufacturing and testing process
+    which still helped me later on when making the with designing the PCBs for the MagPIE2. For more info on this project, you can
+    take a look at the <a href="assets/moto_mod.pdf" download="">poster</a> I made for the PURE (now known as URSA) Symposium.
+
+
+
+  </ul>
+
+
 </h2>
 
 </div>
