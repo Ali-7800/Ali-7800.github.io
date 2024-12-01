@@ -81,8 +81,11 @@
 </h1>
 
 <a href="https://gazzolalab.github.io/PyElastica-Interactive/simulations/monocoil/active.html">
-  <img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;height:50%">
+  <img src="pictures/monocoil.png" alt="monocoil active" style="display:block;margin:auto;width:75%">
 </a>
+<div class="caption"> 
+  Simulation of coiled muscle contracting, click on image for interactive render.
+</div>
 
 </div>
 
@@ -91,8 +94,11 @@
 <div class="content">
   <h1>
     One of the applications of the coiled muscle models I developed is to design mechanisms
-    that utilize theses muscles for various applications. Here's an example of using these muscles as a
-    an actuator to bend and twist an artificial octopus arm.
+    that utilize theses muscles for various applications. One such application is to use them
+    as actuators for a soft octopus arm where different modes of deformation such as bending 
+    and twisting can be realized by arranging the muscles in different ways. We can use computational
+    tools to test out different configurations and optimize our design before manufacturing the
+    real arm.
   </h1>
   
   <div class="row" style="margin:auto;max-width:30%">
@@ -102,31 +108,67 @@
       <img src="pictures/octopus-arm-twist.gif">
     </div>
   
-  
-  
-  
+  </div>
+  <div class="caption"> 
+    Simulation of octopus arm bending (left), and twisting (right).
   </div>
   
   <h1>
-    Here's another example of the muscles being used in antagonstic arrangment that is analogous to
-    the bicep and tricep in a human arm. For the example shown below I had to extended the capability
-    of our simulator PyElastica to be able to handle triangluar mesh based rigid bodies and surfaces.
+    Another application of the muscles is to use their passive properties to create antagonstic arrangments
+    that are analogous to the ones found in animals. One such antagonstic arrangment is the bicep and tricep 
+    muscles in the human arm. When the bicep the is contracted, the tricep applies a passive force that limits the contraction
+    (for safety and stability reasons) and helps with returning the arm to the original configuration.
 
-  
-<img src="pictures/antagonstic_fig.png" style="display:block;margin:auto;height:50%">
+    <img src="pictures/bicep_tricep.png" style="display:block;margin:auto;width:50%">
+    <div class="caption"> 
+      Example of antagonstic muscle pair.
+    </div>
+
+    
+    For this application I had to extended the capability of our cosserat rod simulator PyElastica to
+    be able to import triangluar mesh based rigid bodies and surfaces. Thenm, I simulated an artificial arm
+    that the <a href="https://tawfick.mechse.illinois.edu/">Kinetic Materials Research Group</a> created
+    by importing the CAD model they created and connecting it to the muscles I have modeled before.
+
+    <img src="pictures/antagonstic_fig.png" style="display:block;margin:auto;width:50%">
+    <div class="caption"> 
+      Simulated vs real antagonstic arm.
+    </div>
+
 </div>
 
-<button type="button" class="collapsible" id="mesh">Navigation on Complex Environments</button>
+<button type="button" class="collapsible" id="mesh">Mesh Based Complex Environments</button>
 <div class="content" >
 <h1>
   One of the applications of the new triangluar mesh import capability I developed for PyElastica was to use it
-  to test out some RL based control strategies for limbless soft robot navigation our team has been working on. Shown below
-  is an example of these control strategies being used on imported meshes of reconstructed real environments.
+  to replicate real complex environments to better simulate real life situations. Based on previous work our 
+  group has done on limbless locomotion, we used RL to train policies to control a limbless soft robot (or snake)
+  and we used imported meshes of reconstructed real environments to test out these policies.
 </h1>
 
 <a href="https://gazzolalab.github.io/PyElastica-Interactive/simulations/snake/sand_and_gravel.html">
   
 <img src="pictures/sand_and_gravel.gif" style="display:block;margin:auto;height:50%"></a>
+<div class="caption"> 
+  RL trained snake navigating realistic heterogenous terrain, click on image for interactive render.
+</div>
+
+Another use for the mesh import capability was to simulate medical procedures that involve wires/tubes being inserted
+into different organs/parts. For example, a stomach endoscopy is a procedure where a tube with a camera at the end is 
+inserted through the mouth and into the stomach. Another example is endovascular coiling where a tube is inserted into
+the groin artery and guided to an aneurysm to be treated by puting a coil in its place.
+
+
+<img src="pictures/vessel.gif" style="display:block;margin:auto;height:50%"></a>
+<div class="caption"> 
+  Tube being inserted into a blood vessels and guided to an aneurysm.
+</div>
+
+<img src="pictures/stomach.gif" style="display:block;margin:auto;height:50%"></a>
+<div class="caption"> 
+  A simulated stomach endoscopy.
+</div>
+
 
 
 <!-- Cathy's Octopus will be here eventually
@@ -160,9 +202,12 @@
   I worked on this project during my time at KAUST in Summer of 2021. The project was to 
   develop a computational model for a microbot leg designed by Hussein Hussein (who was a 
   postdoc at KAUST at the time). The model was to be used to understand and control the 
-  microbot leg to make it walk. Shown below is the microbot next to my finger for scale.
+  microbot leg to make it walk.
   <img src="pictures/microrobot.png" alt="microbot" style="display:block;margin:auto;height:50%">
 <br>
+<div class="caption"> 
+  The microbot compared to my finger tip.
+</div>
 
   I had three main tasks in this project.
   <ul>
@@ -174,9 +219,12 @@
   This was a unique experience for me at the time because it was my first time developing a
   model for a non-rigid body robotic system (the leg had elements that would deform to move it).
   It was also my first time creating my own simulation of a physical system (instead of using a simulator).
-  Additionaly, I learned how to use a probe station (shown below) to gather data for micro sized systems. 
+  Additionaly, I learned how to use a probe station to gather data from micro sized systems. 
 
   <img src="pictures/probe.jpeg" alt="probe" style="display:block;margin:auto;width:50%">
+  <div class="caption"> 
+    Probe station used for to gather data from micro sized systems.
+  </div>
 
   For more details on this project, you can take a look at the <a href="assets/microrobot poster.pdf" download="">poster</a>
   I made for KAUST Internship Program Poster Symposium. Now that I think back about this project, it did end
@@ -195,8 +243,12 @@
   systems (computers, sensors, and actuators) that will be used to automate the tractor. A picture of
   me riding the tractor is shown below.
   
-  <br>
-<img src="pictures/tractor.jpeg" alt="tractor" style="display:block;margin:auto;width:50%"><br>
+<br>
+<img src="pictures/tractor.jpeg" alt="tractor" style="display:block;margin:auto;width:50%">
+<div class="caption"> 
+  Me sitting on the tractor we worked on.
+</div>
+<br>
 
   I learned a lot about setting up hardware systems during this opportunity such selecting appropriate
   computers, depth/stereo cameras, lidars, and motors for a particular application, installing Ubuntu and ROS on different computers,
@@ -209,6 +261,9 @@
     </div><div class="column" style="flex:65%;max-width:65%;background-color:white;">
       <img src="pictures/puck.gif" alt="lidar">
     </div>
+  </div>
+  <div class="caption"> 
+    Depth image from Intel Realsense D435i (left), Point Cloud from Velodyne Puck Lidar (right)
   </div>
   
 <br>
@@ -230,10 +285,12 @@
   whose main objective was to create a system for localizing the rover when it is on the moon based on its surroundings.
   Since the only thing surrounding the rover on the moon are rocks, rock detection and segementation are crucial for
   figuring out where the rover is with respect to its surroundings. My task was to develop software that can detect and
-  segement rocks from camera images to be used for localization. An example of rocks being detected and segemented using my code
-  is shown below.
+  segement rocks from camera images to be used for localization.
 
   <img src="pictures/overlay_test_image.png" alt="rock segementation" style="display:block;margin:auto;width:50%">
+  <div class="caption"> 
+    Rocks detected and segmented by the software I developed.
+  </div>
 
   This was my first purely computational project as I was working remotely due to the Covid-19 pandemic. I learned a lot
   about computer vision, image processing, and methods for localization and mapping such as SLAM. It also exponentially 
@@ -248,6 +305,10 @@
   the work we did never made it to the moon, me and everyone else who worked on the project learned a lot from this project
   that would help future generations of rovers and we succeeded in making a rover that went closer to the moon than any other 
   student built rover has to date.
+  <img src="pictures/iris-astrobotic-2000-04.jpg" alt="iris" style="display:block;margin:auto;width:50%">
+  <div class="caption"> 
+    The Iris lunar rover secured to the Peregrine Lunar Lander.
+  </div>
 
 </h1>
 
@@ -269,7 +330,7 @@
     with the sensors handheld (like the original) as well as on a wheeled robot. For this a new dataset, a data collection rig needed to be designed
     to satsify both goals. For this new rig, I used Cadence OrCAD to modify the original PCBs used for magentometer and IMU data collection in the
     original data set. I also designed the parts for the rig used in this project, and I made sure to make them modular so that the same design can still be
-    used for future datasets by just modifing the modules. Below are pictures of the design I came up with being handheld and mounted on a wheeled robot.
+    used for future datasets by just modifing the modules.
 
     <div class="row" style="margin:auto;max-width:70%">
       <div class="column" style="flex:56.3%;max-width:56.3%;">
@@ -278,6 +339,10 @@
         <img src="pictures/Walking_Pic.jpg">
       </div>
     </div>
+    <div class="caption"> 
+      The rig I designed being handheld (right) and mounted on a wheeled robot (left).
+    </div>
+  
 
     <br>
     <li> Moto Mod Magnetometer  </li>
@@ -291,6 +356,11 @@
     not completed, I still learned some new things like PCB design with Autodesk Eagle and the PCB manufacturing and testing process
     which still helped me later on when making the with designing the PCBs for the MagPIE2. For more info on this project, you can
     take a look at the <a href="assets/moto_mod.pdf" download="">poster</a> I made for the PURE (now known as URSA) Symposium.
+
+    <img src="pictures/board_poster.PNG" style="margin:auto;max-width:70%">
+    <div class="caption"> 
+      Layout of the board I designed for the Moto Mod.
+    </div>
 
   </ul>
 
