@@ -56,14 +56,52 @@
 </text>
 
 
-<button type="button" class="collapsible" id="LIDARSLAM">Hector SLAM with Jeston Nano</button>
+<button type="button" class="collapsible" id="LIDARSLAM">Remote Controlled Robot with LIDAR</button>
 <div class="content">
 <h2>
-  WIP
+  This project was inspired by the <a href="research.html#tractor">autonomous farming</a> I worked on
+  during my junior year. In that project I learned about the <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/">Jetson Nano</a>,
+  and how to install Ubuntu and ROS on it. I wanted to apply the lessons I learned from it on my
+  own project, and to learn more about building my own robots. The following are the tasks I wanted the
+  robot to be able to do:
+  <ul>
+    <li>Use mecanum wheels for omni-directional movement (done)</li>
+    <li>Be remote controlled with a Dualshock 4 (done)</li>
+    <li>Use LIDAR to map its surroundings (done)</li>
+    <li>Have some sort of manipulator to interact with the world (WIP)</li>
+  </ul>
+
+  The first major step was building the actual thing, which took a lot of time. I learned many 
+  lessons along the way such as component selection, wiring and circuit design. While I was working on the
+  physical system, I was also setting up the Jetson Nano with the ROS and the packages I needed for the LIDAR
+  and controller so by the time I was done with the prototype I was ready to make it run. After a couple 
+  of failed prototypes, I managed to build one that worked correctly.
+
+  <img src="pictures/remote.gif" style="display:block;margin:auto;max-width:70%">
+  <div class="caption"> 
+    The robot being remote controlled with a Dualshock 4.
+  </div>
+
+  After getting the robot to work with the Dualshock 4 and the LIDAR, the next step was
+  to get use the LIDAR data for mapping. Since I was using ROS already, I decided to use
+  the <a href="https://wiki.ros.org/hector_slam">Hector SLAM</a> package for ROS. After
+  some messing around I managed to make work on the robot.
+
+  <img src="pictures/hector_slam.gif" style="display:block;margin:auto;max-width:70%">
+  <div class="caption"> 
+    Hector SLAM running on the robot.
+  </div>
+
+  Hector SLAM worked fine except that I was using it in a hallway that did not have many
+  uniqure features, so it had trouble figuring out if it moved along the hallway or not.
+  To fix this issue I will probably need to include another sensor's data like an IMU
+  or a depth camera. That's where I left the project at, but I plan on coming back to
+  it at some point to finish it.
+
 </h2>
 </div>
 
-<button type="button" class="collapsible"  id="ORBSLAM">OrbSLAM2 with Raspberry PI</button>
+<button type="button" class="collapsible"  id="ORBSLAM">RC car with camera</button>
 <div class="content">
 <h2>
   WIP
