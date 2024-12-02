@@ -92,8 +92,6 @@
     communicating results to other people. You can take a look at the interactive renders I made of
     some my simulations right <a href="https://gazzolalab.github.io/PyElastica-Interactive/index.html">here</a>!
 
-
-
   </h1>
 </div>
 
@@ -105,6 +103,53 @@
     <div class="column" style="flex:25%;max-width:25%;text-align:center;">
         <h1>Fall 2021</h1>
     </div>
+    <h1>
+      This course was a comprehensive introduction to humanoid robotics. The course included a bi-weekly paper
+      reviews on recent publications, lectures on humanoid robotics, assignments on a given
+      <a href = "https://www.robotis.us/robotis-mini-intl/?srsltid=AfmBOoriQK66EPaBULwFa0UbnPB4v7h36_QhqqYPAJiV33F_TMSqvYxp">ROBOTIS MINI></a> kit,
+      and a project. The course covered many topics such as	kinematics, dynamics, control, legged and biped
+      locomotion, and simulation tools. The project is usually done with the ROBOTIS MINI kit, but one team
+      got to work with a full sized humanoid robot <a href="https://emanual.robotis.com/docs/en/platform/thormang3/introduction/">THORMANG</a>.
+      I was fortune to be a part of the team that worked on THORMANG.
+
+      <img src="pictures/thormang.jpg">
+      <div class="caption"> 
+        Our project team posing with THORMANG.
+      </div>
+
+      Our project focused on figuring out how to automate household tasks using a humanoid robot. The task
+      we focused on was picking up a cup from a table and putting it in a dish washer. This simple task
+      involved many steps for the robot to take:
+
+      <ul>
+        <li> Use the robot camera to locate the cup in the camera image</li>
+        <li> Convert the camera pixel coordinates to world coordinates</li>
+        <li> Use the world camera to generate a path for the robot arm to grasp the cup</li>
+        <li> Convert the path into signals for the motors on the robot arm</li>
+      </ul>
+
+      The part that I worked on the most was using image processing to locate the cup in the camera image.
+      For this I used OpenCV2 with some image processing knowledge I learned while working on <a href="research.html#IRIS">
+      Iris.</a> to create a simple but robust program that can locate the cup and publish its world position
+      using ROS.
+
+      <img src="pictures/vision.gif">
+      <div class="caption"> 
+        My code for locating the cup running on THORMANG.
+      </div>
+      
+      You can learn more about the project 
+      <a href="https://docs.google.com/presentation/d/1PTLNW5cLQs1TOJUChEk2rZIb6vuD6jgi/edit?usp=sharing&ouid=102754596452479928250&rtpof=true&sd=true">here</a>!.
+      Overall, I learned a lot from this project about working with real humanoid robots from the sensors and actuators used,
+      to the software and algorithms involved. It also improved my computer vision and ROS developement skills
+      and helped me understand the class topics even better. 
+      
+      <img src="pictures/thormang_demo.gif">
+      <div class="caption"> 
+        THORMANG picking a cup and placing it in a dishwasher.
+      </div>
+
+    </h1>
   </div>
 </div>
 
