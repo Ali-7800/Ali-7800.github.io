@@ -201,6 +201,40 @@
         <h1>Spring 2020</h1>
     </div>
   </div>
+  <h1>
+    This course was a fast-paced comprehensive introduction to robotics. The following are some of the topics it covered:
+    <ul>
+      <li> Mechanism design.</li>
+      <li> Rigid body motion & transformations.</li>
+      <li> Screw theory.</li>
+      <li> Forward, inverse and velocity Kinematics. </li>
+      <li> Motion Planning. </li>
+      <li> Sensing and Perception. </li>
+    </ul>
+
+    In addition to the lectures, the course had a lab component where you learned how to use ROS to control
+    a <a href="https://www.universal-robots.com/products/ur3-robot/">UR3</a> robot arm. Along with them was
+    final project where you used the robotics simulator <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a>
+    To simulate a robot system performing a challenging task. 
+    <br>
+    The task I decided to do was book sorting because it was a task that I do a lot but I do not find that entertaining. I made a system of robots and conveyor belts 
+    (which I called Book Worm) that sort books based on two criteria: color (which represents the topic of the book),
+    and size (the length of the longest edge of the book). A color sorting UR3 robot separates the books based on the
+    RGB color data from a vision sensor. It can sort any set of colored books into stacks, with a maximum of 3 stacks
+    (3 colors) with 3 books each. Then a size sorting UR3 robot sorts the books in descending order where the largest
+    book is placed on the bottom, based on data from two parallel opposite proximity sensors. Although the system was
+    made for books it can be adapted to sort any rectangular prism shaped object such as packages. You can learn more
+    about this system from the <a href="assets/ECE 470 Final Project Report.pdf" download="">project</a> report I wrote.
+
+    <img src="pictures/color_sort.gif" style="display:block;margin:auto;max-width:70%">
+      <div class="caption"> 
+        The book sorting robot system I simulated using CoppeliaSim.
+      </div>
+
+    This course taught me a lot of new concepts that I still use to this day such as homogeneous coordinates and transformations,
+    forward and inverse kinematics, and particle filters. It also introduced me to new software such as OpenCV2, ROS, and CoppeliaSim.
+
+  </h1>
 </div>
 
 <script>
