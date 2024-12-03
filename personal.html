@@ -58,32 +58,33 @@
 
 <button type="button" class="collapsible" id="LIDARSLAM">Remote Controlled Robot with LIDAR</button>
 <div class="content">
-<h2>
-  This project was inspired by the <a href="research.html#tractor">autonomous farming</a> I worked on
-  during my junior year. In that project I learned about the <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/">Jetson Nano</a>,
-  and how to install Ubuntu and ROS on it. I wanted to apply the lessons I learned from it on my
-  own project, and to learn more about building my own robots. The following are the tasks I wanted the
-  robot to be able to do:
+<h1>
+  This project was inspired by the <a href="research.html#tractor">autonomous farming</a> and 
+  <a href="personal.html#ORBSLAM">RC car with camera</a> projects I worked on during my junior year.
+  I wanted to build something better than the RC car project that applied the things I learned in the autonomous farming project.
+  I learned about the <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/">Jetson Nano</a>,
+  and how to install Ubuntu and ROS on it and I wanted to try to use it to make a robot. I also wanted to try to use a LIDAR and depth camera similar to what we did
+  in the farming project. The following are the tasks I wanted this new robot to do:
+  
   <ul>
-    <li>Use mecanum wheels for omni-directional movement (done)</li>
-    <li>Be remote controlled with a Dualshock 4 (done)</li>
-    <li>Use LIDAR to map its surroundings (done)</li>
-    <li>Have some sort of manipulator to interact with the world (WIP)</li>
+    <li>Use mecanum wheels for omni-directional movement</li>
+    <li>Be remote controlled with a Dualshock 4</li>
+    <li>Use LIDAR and a depth camera to map its surroundings </li>
+    <li>Have some sort of manipulator to interact with the world </li>
   </ul>
 
-  The first major step was building the actual thing, which took a lot of time. I learned many 
-  lessons along the way such as component selection, wiring and circuit design. While I was working on the
-  physical system, I was also setting up the Jetson Nano with the ROS and the packages I needed for the LIDAR
-  and controller so by the time I was done with the prototype I was ready to make it run. After a couple 
-  of failed prototypes, I managed to build one that worked correctly.
+  The first major step was building the actual thing, which took a lot of time but thankfully I had some experience from the RC car project.
+  I still learned many new lessons along the way such as battery and motor selection, proper wiring and circuit design. While I was working on the
+  physical system, I was also setting up the Jetson Nano with ROS and the packages I needed for the LIDAR and controller so by the time I was done with
+  the prototype I was ready to make it move. After a couple of failed prototypes, I managed to build one that worked fine.
 
   <img src="pictures/remote.gif" style="display:block;margin:auto;max-width:70%">
   <div class="caption"> 
-    The robot being remote controlled with a Dualshock 4.
+    The robot I built being remote controlled with a Dualshock 4.
   </div>
 
   After getting the robot to work with the Dualshock 4 and the LIDAR, the next step was
-  to get use the LIDAR data for mapping. Since I was using ROS already, I decided to use
+  to get use the LIDAR data for mapping. Since I was using ROS already, I decided to try
   the <a href="https://wiki.ros.org/hector_slam">Hector SLAM</a> package for ROS. After
   some messing around I managed to make work on the robot.
 
@@ -92,20 +93,79 @@
     Hector SLAM running on the robot.
   </div>
 
-  Hector SLAM worked fine except that I was using it in a hallway that did not have many
+  Hector SLAM worked fine except that I was using it in a long hallway that did not have many
   uniqure features, so it had trouble figuring out if it moved along the hallway or not.
-  To fix this issue I will probably need to include another sensor's data like an IMU
-  or a depth camera. That's where I left the project at, but I plan on coming back to
-  it at some point to finish it.
+  To fix this issue I will need to do some sensor fusion with the depth camera.
+  That's where I left the project at, but I plan on coming back to it at some point to do the sensor fusion
+  and try <a href="http://wiki.ros.org/rtabmap_ros">Real-Time Appearance-Based Mapping
+  </a> and add some sort of manipulator to make it interact with the environment.
 
-</h2>
+</h1>
 </div>
 
 <button type="button" class="collapsible"  id="ORBSLAM">RC car with camera</button>
 <div class="content">
-<h2>
-  WIP
-</h2>
+<h1>
+  This project was inspired by the my work in the <a href="research.html#IRIS">Iris Lunar Rover</a> teleoperations team 
+  back in summer 2020. The pandemic was in full swing and the <a href="https://riss.ri.cmu.edu/">
+  CMU Robotics Institute Summer Scholars </a> was held remotely, which meant I had to work on a software 
+  based project instead of a hands-on one. Even though it was not necessary for my Iris work, I still wanted to
+  build an RC car with a camera to test out some computer vision software that we were planning on using
+  on the rover. Specifically, <a href="https://colmap.github.io/">COLMAP</a> and <a href="https://github.com/raulmur/ORB_SLAM2">
+  ORB-SLAM2</a>, both of which worked with a single camera (just like Iris).
+
+  <img src="pictures/rc-car.jpg" style="display:block;margin:auto;max-width:70%">
+  <div class="caption"> 
+    The RC car I built, equipped with a Rasberry Pi 3, Arduino Nano, and webcam.
+  </div>
+
+  This was my first time making a project like this (I just finished my sophomore year at that time), but
+  it was a good learning experience on how to use the Rasberry Pi 3 remotely to control things. It worked
+  fine for moving and taking images that I could use to create a point cloud reconstruction of my apartment
+  using COLMAP.
+
+  <div class="row" style="margin:auto;max-width:70%">
+    <div class="column" style="flex:33.4%;max-width:33.4%;">
+      <img src="pictures/RC-TOP.gif">
+    </div><div class="column" style="flex:33.3%;max-width:33.3%;background-color:white;">
+      <img src="pictures/colmap-side.PNG">
+    </div>
+  </div><div class="column" style="flex:33.3%;max-width:33.3%;background-color:white;">
+    <img src="pictures/colmap-top.PNG">
+  </div>
+  
+  </div>
+  <div class="caption"> 
+    The RC car running and taking images (left), COLMAP point cloud reconstructed from the images (center and right).
+  </div>
+  
+  It ended up being pretty useful for testing COLMAP reconstruction from sparse image data, but I needed to do some
+  upgrades to make ORB-SLAM2 work on it. Thankfully, I was working on the <a href="research.html#tractor">autonomous farming</a>
+  project at that time, so I knew exactly what I should do to make it work. I installed Ubuntu instead
+  of Raspberry Pi OS so I can install ROS on the Pi which would allow me to publish the webcam image
+  data using <a href="https://wiki.ros.org/usb_cam">usb_cam</a> so I can easily run ORB-SLAM2.
+  I also replaced the wheels with mecanum wheels to make navigation inside of the apartment easier, and
+  because I wanted to try them out.
+
+  <div class="row" style="margin:auto;max-width:70%">
+    <div class="column" style="flex:50%;max-width:50%;">
+      <img src="pictures/RC-mecanum.gif">
+    </div>
+  </div><div class="column" style="flex:50%;max-width:50%;background-color:white;">
+    <img src="pictures/slam mode.gif">
+  </div>
+  
+  </div>
+  <div class="caption"> 
+    The RC car moving with mecanum wheels (left), and ORB-SLAM2 running on it (right).
+  </div>
+
+  This project was a lot of fun and it helped me better understand Structure from Motion (SfM)
+  and Simultaneous Localization And Mapping (SLAM). This was my first attempt at building something
+  technical outside of class and I really enjoyed it, which is one of the reasons I decided to
+  make the <a href="personal.html#LIDARSLAM">remote controlled robot with LIDAR</a> project.
+  
+</h1>
 </div>
 
 
